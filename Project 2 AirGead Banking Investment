@@ -1,0 +1,114 @@
+/*
+*
+5-3 Project 2 Submission
+Author: Richard Leblanc
+CS-210
+Southern New Hampshire University
+Date: 2/4/23
+*
+*/
+
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+
+
+	// Declare Variables for initial investment, monthly deposit, annual interest, number of years, number of months, interest amount, yearly interest, and total amount
+
+	float initInvest, monthlyDpt, annualInt, numYears, numMonths, intAmount, yearlyInt, totalAmt;
+
+	// Define cout statements to demonstrate data input assets
+
+	cout << "**********************************" << endl;
+	cout << "********** Data Input ************" << endl;
+	cout << "Initial Investment Amount: " << endl;
+	cout << "Monthly Deposit: " << endl;
+	cout << "Annual Interest: " << endl;
+	cout << "Number of years: " << endl;
+
+	// Initialize function to continue program after input
+
+	system("PAUSE");
+	cout << "\n";
+
+	// Initialize statmements to get user input for initial investment, monthly deposit, annual interest, and number of years
+
+	cout << "**********************************" << endl;
+	cout << "********** Data Input ************" << endl;
+	cout << "Initial Investment Amount:  $";
+	cin >> initInvest;
+	cout << "Monthly Deposit:  $";
+	cin >> monthlyDpt;
+	cout << "Annual Interest:  %";
+	cin >> annualInt;
+	cout << "Number of years: ";
+	cin >> numYears;
+
+	numMonths = 12 * numYears;
+
+	// Initialize function to continue program after input
+
+	system("PAUSE");
+	cout << "\n";
+
+	totalAmt = initInvest;
+
+	// Define cout statements to demonstrate Balance and Interest Without the Additional Monthly Deposits
+
+	cout << "     Balance and Interest Without Additional Monthly Deposits    " << endl;
+	cout << "=================================================================" << endl;
+	cout << "  Year         Year End Balance     Year End Earned Interest     " << endl;
+	cout << "-----------------------------------------------------------------" << endl;
+
+	// Initialize for loop to calculate and print the total years, year end balance, and year end earned interest for balance and interest without the additional monthly deposits
+
+	for (int i = 0; i < numYears; i++) {
+
+		intAmount = ((totalAmt) * (annualInt / 100));
+
+		totalAmt = intAmount + totalAmt;
+
+		cout << "\t\t" << i + 1 << "\t\t\t $" << fixed << setprecision(2) << totalAmt  << \t/\t$" << intAmount << endl;
+		cout << "\n";
+
+	}
+
+	totalAmt = initInvest;
+
+
+	// Define cout statement to demonstrate Balance and Interest With the Additional Monthly Deposits
+
+	cout << "      Balance and Interest With Additional Monthly Deposits      " << endl;
+	cout << "=================================================================" << endl;
+	cout << "  Year         Year End Balance     Year End Earned Interest     " << endl;
+	cout << "-----------------------------------------------------------------" << endl;
+
+
+	// Initialize for loops to calculate and print the interest amount, yearly interest, and total amount for balance and interest with the additional monthly deposits
+
+	for (int x = 0; x < numYears; x++) {
+
+		yearlyInt = 0;
+
+		for (int i = 0; i < 12; i++) {
+
+			intAmount = (totalAmt + monthlyDpt) * ((annualInt / 100) / 12);
+
+			yearlyInt = yearlyInt + intAmount;
+
+			totalAmt = intAmount + monthlyDpt + totalAmt;
+
+		}
+
+		cout << "\t\t" << x + 1 << "\t\t\t$" << totalAmt << "\t\t$" << yearlyInt << endl;
+		cout << "\n";
+
+	}
+
+	return 0;
+}
+
