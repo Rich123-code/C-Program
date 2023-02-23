@@ -2,7 +2,7 @@
 
 1. Summarize the project and what problem it was solving.
 
-When summarizing the project, I find I was to create an application that would calculate the users investment and display there earnings overtime. Specifically, the problem the application or project was trying to solve was that it needed to take the users initial investment amount, monthly deposit, annual interets, and number of years and calculate the year end balance and year end earned interest based on that amount. 
+When summarizing the project, I find it was to create an application that would calculate the users investment and display there earnings overtime. Specifically, the problem the application or project was trying to solve was that it needed to take the users initial investment amount, monthly deposit, annual interets, and number of years and calculate the year end balance and year end earned interest based on that amount. 
 
 2. What did you do particularly well?
 
