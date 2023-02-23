@@ -104,7 +104,7 @@ int main() {
 
 		}
 
-		cout << "/t/t" << x + 1 << "/t/t/t$" << totalAmt << "/t/t$" << yearlyInt << endl;
+		cout << "\t\t" << x + 1 << "\t\t\t$" << totalAmt << "\t\t$" << yearlyInt << endl;
 		cout << "\n";
 
 	}
