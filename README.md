@@ -4,7 +4,6 @@ Summarize the project and what problem it was solving.
 
 When summarizing the project, I find I was to create an application that would calculate the users investment and display there earnings overtime. Specifically, the problem the application or project was trying to solve was that it needed to take the users initial investment amount, monthly deposit, annual interets, and number of years and calculate the year end balance and year end earned interest based on that amount. 
 
-
 What did you do particularly well?
 
 I find that I did a good job displaying the program's functionality through the use of in-line comments and in creating the correct functions that would calculate the user's investment overtime. Additionally, I find that I did a good job in creating code that would displayed an organized menu of the user's investment growth based on applications calculations.  
