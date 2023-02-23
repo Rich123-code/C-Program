@@ -72,7 +72,7 @@ int main() {
 
 		totalAmt = intAmount + totalAmt;
 
-		cout << "     " << i + 1 << "			  $" << fixed << setprecision(2) << totalAmt  << "			       $" << intAmount << endl;
+		cout << "\t\t" << i + 1 << "/t/t/t $" << fixed << setprecision(2) << totalAmt  <</t/t$" << intAmount << endl;
 		cout << "\n";
 
 	}
